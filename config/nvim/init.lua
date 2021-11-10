@@ -1,0 +1,6 @@
+require 'core.utils'
+require 'core.plugins'
+require 'core.options'
+require 'core.lspconfig'
+require 'core.NvimTree'
+require 'core.mapping'
