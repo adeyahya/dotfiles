@@ -79,6 +79,8 @@ set('pumblend', '5')
 
 -- Extras
 set 'exrc'
+set('completeopt', 'menu,menuone,noselect')
 
 vim.g.sonokai_disable_italic_comment = '1'
 vim.cmd('colorscheme sonokai')
+

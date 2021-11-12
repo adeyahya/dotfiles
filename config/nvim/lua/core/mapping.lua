@@ -18,7 +18,7 @@ buf_set_keymap('n', 'gp', '<Cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
 -- Update
 nmap(';;', ':update<CR>')
 nmap('pp', ':Prettier<CR>')
-map('ee', ':NvimTreeToggle')
+map('ee', ':NvimTreeToggle<CR>')
 nmap('<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<CR>')
 nmap('<leader>fg', '<cmd>lua require("telescope.builtin").live_grep()<CR>')
 nmap('<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<CR>')

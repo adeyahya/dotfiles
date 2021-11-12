@@ -1,6 +1,8 @@
 require 'core.utils'
 require 'core.plugins'
+require 'core.telescope'
 require 'core.options'
 require 'core.lspconfig'
+require 'core.cmp'
 require 'core.NvimTree'
 require 'core.mapping'
