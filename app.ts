@@ -14,19 +14,45 @@ for (const inst of scripts) {
   console.log(output)
 }
 
+const checkExist = async (p: string) => {
+  try {
+    const stat = await fs.stat(p);
+    return stat
+  } catch (_) {
+    return null
+  }
+}
+
+const walker = async (sp: string, tp: string): Promise<any> => {
+  const sstat = await fs.stat(sp)
+  const tstat = await checkExist(tp)
+  if (!tstat && sstat.isDirectory()) {
+    await $`mkdir -p ${tstat}`
+  }
+
+  if (sstat.isDirectory()) {
+    const dirs = await fs.readdir(sp)
+    for (const d of dirs) {
+      await walker(path.join(sp, d), path.join(tp, d))
+    }
+    return;
+  }
+
+  // if file exist
+  if (tstat && tstat.isFile()) await $`rm ${tp}`
+  if (tstat && tstat.isDirectory()) await $`rm -rf ${tp}`
+
+  if (sstat.isFile()) {
+    await $`ln -s ${sp} ${tp}`;
+  }
+  console.log(`symlinked ${tp}`)
+}
+
 // symlink all dotfiles
 const files = await fs.readdir(__dirname);
-const dotFiles = files.filter(n => n.startsWith(".") || n == ".git")
+const dotFiles = files.filter(n => n.startsWith(".") && n !== ".git" && n !== ".gitignore")
 for (const fpath of dotFiles) {
-  const stats = await fs.stat(path.resolve(__dirname, fpath));
   const target = path.resolve(os.homedir(), fpath);
   const source = path.resolve(path.resolve(__dirname, fpath))
-  if (stats.isDirectory()) {
-    await $`rm -rf ${target}`;
-    await $`ln -s ${source} ${target}`;
-  } else if (stats.isFile()) {
-    await $`rm ${target}`;
-    await $`ln -s ${source} ${target}`;
-  }
-  console.log(`symlinked ${target}`)
+  await walker(source, target)
 }
