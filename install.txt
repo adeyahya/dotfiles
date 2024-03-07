@@ -1,0 +1,6 @@
+# helix ts lsp
+bun add -g typescript-language-server typescript
+bun add -g vscode-langservers-extracted
+bun add -g emmet-ls
+bun add -g prettier
+# curl -fsSL https://dprint.dev/install.sh | sh
