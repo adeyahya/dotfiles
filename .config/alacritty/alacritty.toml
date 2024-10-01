@@ -1,0 +1,16 @@
+[env]
+term = "screen-256color"
+
+[font]
+normal = { family = "JetbrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetbrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetbrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetbrainsMono Nerd Font", style = "Bold Italic" }
+size = 14
+
+[window]
+padding = { x = 15, y = 10 }
+decorations = "Buttonless"
+opacity = 0.95
+blur = true
+# startup_mode = "Maximized"
