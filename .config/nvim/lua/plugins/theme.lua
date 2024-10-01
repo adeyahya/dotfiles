@@ -2,6 +2,7 @@ return {
   -- "xiyaowong/transparent.nvim",
   {
     "2nthony/vitesse.nvim",
+    enabled = not vim.g.vscode,
     dependencies = {
       "tjdevries/colorbuddy.nvim",
     },
