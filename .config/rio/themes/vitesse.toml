@@ -2,7 +2,7 @@
 
 # Normal
 foreground = '#cdd6f4'
-background = '#000000'
+background = '#222222'
 black = '#45475a'
 blue = '#89b4fa'
 cursor = '#f5e0dc'

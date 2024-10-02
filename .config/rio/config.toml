@@ -21,7 +21,7 @@
 # Example:
 theme = "vitesse"
 padding-x = 10
-padding-y = [10, 0]
+padding-y = [10, 5]
 
 # Option as Alt
 #
@@ -116,9 +116,9 @@ padding-y = [10, 0]
 width = 1400
 height = 1000
 # mode = "windowed"
-opacity = 0.8
-blur = true
-decorations = "Transparent"
+# opacity = 0.9
+# blur = true
+# decorations = "Transparent"
 
 # Renderer
 #
@@ -182,7 +182,7 @@ decorations = "Transparent"
 # so to reflect your changes, you will need to close and reopen Rio.
 #
 [fonts]
-family = "Cascadia Code NF"
+family = "JetbrainsMono Nerd Font"
 size = 14
 #
 [fonts.regular]

@@ -1,6 +1,7 @@
 return {
   "yetone/avante.nvim",
-  enabled = not vim.g.vscode,
+  -- enabled = not vim.g.vscode,
+  enabled = false,
   event = "VeryLazy",
   lazy = false,
   version = false, -- set this if you want to always pull the latest change
