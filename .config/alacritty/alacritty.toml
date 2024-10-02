@@ -1,5 +1,7 @@
+import = ["~/.config/alacritty/themes/gruvbox.toml"]
+
 [env]
-term = "screen-256color"
+term = "xterm-256color"
 
 [font]
 normal = { family = "JetbrainsMono Nerd Font", style = "Regular" }
@@ -11,6 +13,6 @@ size = 14
 [window]
 padding = { x = 15, y = 10 }
 decorations = "Buttonless"
-opacity = 0.95
+opacity = 0.90
 blur = true
 # startup_mode = "Maximized"
