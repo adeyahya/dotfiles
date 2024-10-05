@@ -1,0 +1,41 @@
+theme = "base16_transparent"
+
+[editor]
+line-number = "relative"
+mouse = false
+true-color = true
+bufferline = "always"
+# rulers = [80]
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal.space]
+
+# [keys.normal.f]
+# f = "file_picker"
+
+[keys.normal]
+q = ":quit"
+"?" = "command_palette"
+X = "extend_line_above"
+G = "goto_file_end"
+
+# [keys.normal.g]
+# c = "toggle_comments"
+
+[keys.normal.";"]
+";" = ":write"
+k = "half_page_up"
+j = "half_page_down"
+K = "page_up"
+J = "page_down"
