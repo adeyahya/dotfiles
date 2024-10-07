@@ -1,0 +1,120 @@
+clear
+$env
+$env.show_banner
+$env.config
+clear
+vim $env.config-path
+vim $env.config_path
+$env.config_path
+$env.config
+$env.config-path
+$env.config.path
+$nu.config-path
+vim $nu.config-path
+nvim $nu.config-path
+vim ~/.config/nvim/lua/plugins.lua
+nvim ~/.config/nvim/lua/plugins.lua
+nvim $nu.config-path
+exit
+nvim $nu.config-path
+exit
+vi
+vim
+clear
+ll
+ls -l
+clear
+nvim $nu.config-path
+exit
+ll
+nvim $nu.config-path
+ll
+ssh adeyahya@pibox
+clear
+exit
+ll
+exit
+hx
+ls
+exit
+ls
+ls -l
+clear
+ll
+neofetch
+clear
+ll
+yazi
+y
+clear
+exit
+ls -la
+ls
+clear
+neofetch
+zellij
+cd dotfiles/
+mkdir -p .config/zellij/layouts
+mkdir .config/zellij/layouts
+yazi .config/
+zellij
+stow .
+zellij
+yazi
+zellij
+yazi
+zellij
+stow .
+zellij
+yazi
+zellij
+clear
+ll
+clear
+ls
+ls -l
+ls
+cd .config/
+ls
+rm -rf zellij
+clear
+cd
+clear
+ll
+clear
+tls
+tmux ls
+tmux --help
+tmux attach ide
+tmux --help
+hx ~/.zshrc
+tmux a -t ide
+clear
+ls
+exit
+ls
+exit
+tmux a -t ide
+ta ide
+exit
+lg
+exit
+nsh --init
+nu --init
+nushell --init
+clear
+cd
+yazi .config/nushell/
+y
+exit
+y
+$nu.env-path
+cd
+y .config/nushell/
+exiy
+exit
+ls
+ll
+ls
+clear
+exit
