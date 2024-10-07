@@ -13,6 +13,6 @@ size = 14
 [window]
 padding = { x = 15, y = 10 }
 decorations = "Buttonless"
-opacity = 0.90
-blur = true
+# opacity = 0.90
+# blur = true
 # startup_mode = "Maximized"
