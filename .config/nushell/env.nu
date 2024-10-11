@@ -96,6 +96,8 @@ $env.NU_PLUGIN_DIRS = [
 # path add ($env.CARGO_HOME | path join "bin")
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
+use std "path add"
+$env.JAVA_HOME = "/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')

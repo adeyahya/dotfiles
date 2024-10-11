@@ -115,7 +115,7 @@ padding-y = [10, 5]
 width = 1400
 height = 1000
 # mode = "windowed"
-opacity = 0.95
+opacity = 0.9
 # blur = true
 decorations = "Transparent"
 
@@ -252,8 +252,8 @@ weight = 600
 # Example 1 using fish shell from bin path:
 #
 # [shell]
-# program = "/bin/fish"
-# args = ["--login"]
+# program = "/opt/homebrew/bin/nu"
+# args = []
 #
 # Example 2 for Windows using powershell
 #

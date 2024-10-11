@@ -6,9 +6,9 @@ args = ["--stdio"]
 command = "vscode-json-language-server"
 args = ["--stdio"]
 
-[language-server]
-deno = { command = "deno", args = [ "lsp" ]}
-emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
+# [language-server]
+# deno = { command = "deno", args = [ "lsp" ]}
+# emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
 
 [language-server.eslint]
 command = "vscode-eslint-language-server"

@@ -2,6 +2,7 @@ $env.config = {
   show_banner: false,
 }
 
+# alias
 alias vi = nvim
 alias vim = nvim
 alias ll = ls -l
@@ -15,3 +16,4 @@ alias y = yazi
 alias lg = lazygit
 
 use ~/.cache/starship/init.nu
+use ./completions/git.nu *
