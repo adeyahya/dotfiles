@@ -1,0 +1,12 @@
+[Unit]
+Description=xremap
+After=default.target
+
+[Service]
+ExecStart=%h/.cargo/bin/xremap %h/.config/xremap/config.yml
+StandardOutput=journal
+StandardError=journal
+Restart=always
+
+[Install]
+WantedBy=default.target
