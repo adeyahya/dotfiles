@@ -1,9 +1,9 @@
 return {
-  'jinh0/eyeliner.nvim',
+  "jinh0/eyeliner.nvim",
   config = function()
-    require('eyeliner').setup {
+    require("eyeliner").setup({
       highlight_on_key = true,
-      dim = true
-    }
-  end
+      dim = true,
+    })
+  end,
 }

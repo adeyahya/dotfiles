@@ -130,3 +130,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 if [[ -n "$TMUX" ]]; then
     exec nu
 fi
+
+export PATH="$PATH:$HOME/.local/bin"
+

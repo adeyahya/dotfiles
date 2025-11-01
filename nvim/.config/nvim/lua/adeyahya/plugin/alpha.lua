@@ -1,10 +1,10 @@
 return {
-  'goolord/alpha-nvim',
+  "goolord/alpha-nvim",
   dependencies = {
-    'nvim-mini/mini.icons',
-    'nvim-lua/plenary.nvim'
+    "nvim-mini/mini.icons",
+    "nvim-lua/plenary.nvim",
   },
   config = function()
-    require 'alpha'.setup(require 'alpha.themes.theta'.config)
-  end
+    require("alpha").setup(require("alpha.themes.theta").config)
+  end,
 }

@@ -3,7 +3,7 @@ return {
   main = "ibl",
   config = function()
     require("ibl").setup({
-      scope = { enabled = false },       -- Only show line guide
+      scope = { enabled = false }, -- Only show line guide
       exclude = {
         filetypes = {
           "NvimTree",

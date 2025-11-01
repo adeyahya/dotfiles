@@ -14,16 +14,16 @@ return {
       require("neo-tree").setup({
         -- Add your config here
       })
-      
+
       -- Keybinding
-      vim.keymap.set('n', '<C-b>', ':Neotree toggle<CR>', { 
-        noremap = true, 
-        silent = true 
+      vim.keymap.set("n", "<C-b>", ":Neotree toggle<CR>", {
+        noremap = true,
+        silent = true,
       })
-    end
+    end,
   },
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     ---@module 'oil'
     ---@type oil.SetupOpts
     opts = {},
@@ -36,8 +36,8 @@ return {
       require("oil").setup({
         view_options = {
           show_hidden = true,
-        }
+        },
       })
-    end
-  }
+    end,
+  },
 }

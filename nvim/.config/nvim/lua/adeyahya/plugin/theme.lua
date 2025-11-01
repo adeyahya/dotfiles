@@ -33,7 +33,7 @@ return {
       })
 
       -- 3. Apply the colorscheme
-      vim.cmd.colorscheme "catppuccin"
+      vim.cmd.colorscheme("catppuccin")
       -- You can also use "catppuccin-mocha" directly here,
       -- but "catppuccin" is safer as it respects the 'flavour' option above.
     end,

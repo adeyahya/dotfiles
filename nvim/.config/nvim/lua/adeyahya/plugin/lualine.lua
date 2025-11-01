@@ -5,7 +5,7 @@ return {
     require("lualine").setup({
       options = {
         icons_enabled = true,
-        theme = "auto",         -- Uses your current colorscheme theme
+        theme = "auto", -- Uses your current colorscheme theme
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         disabled_filetypes = {},
@@ -24,5 +24,5 @@ return {
       -- You can add different configs for different modes
       -- inactive_sections = { ... }
     })
-  end
+  end,
 }

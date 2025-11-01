@@ -2,7 +2,7 @@ return {
   {
     "davidmh/mdx.nvim",
     config = true,
-    dependencies = { "nvim-treesitter/nvim-treesitter" }
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -45,9 +45,9 @@ return {
 
       vim.filetype.add({
         extension = {
-          mdx = 'mdx',
-        }
+          mdx = "mdx",
+        },
       })
     end,
-  }
+  },
 }
