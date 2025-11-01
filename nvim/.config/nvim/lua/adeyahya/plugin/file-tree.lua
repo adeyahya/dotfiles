@@ -9,7 +9,7 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
-    lazy = true,
+    lazy = false,
     config = function()
       require("neo-tree").setup({
         -- Add your config here
