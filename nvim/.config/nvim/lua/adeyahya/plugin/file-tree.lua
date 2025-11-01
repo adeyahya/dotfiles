@@ -10,6 +10,17 @@ return {
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
     lazy = true,
+    config = function()
+      require("neo-tree").setup({
+        -- Add your config here
+      })
+      
+      -- Keybinding
+      vim.keymap.set('n', '<C-b>', ':Neotree toggle<CR>', { 
+        noremap = true, 
+        silent = true 
+      })
+    end
   },
   {
     'stevearc/oil.nvim',
