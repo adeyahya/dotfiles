@@ -14,7 +14,10 @@ vim.opt.expandtab = true      -- Convert tabs to spaces
 vim.opt.autoindent = true     -- Copy indent from current line when starting a new line
 
 vim.opt.smartindent = true    -- Smart auto-indenting
-vim.opt.wrap = false          -- Don't wrap lines
+vim.opt.wrap = true           -- Enable line wrap
+vim.opt.linebreak = true      -- Break lines at word boundaries
+vim.opt.breakindent = true    -- Preserve indentation in wrapped lines
+vim.opt.showbreak = "↪ "      -- Show character at line breaks (optional)
 
 vim.opt.hlsearch = true       -- Highlight all matches on search
 vim.opt.incsearch = true      -- Incremental search
