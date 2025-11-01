@@ -1,0 +1,19 @@
+config nu
+clear
+config nu
+v
+clear
+$env
+vo,
+v
+rm zsh/.zshrc.swp
+v
+clear
+vim
+$env
+clear
+ll
+clear
+ls
+neofetch
+clear
