@@ -119,6 +119,33 @@ Personal dotfiles for managing shell and terminal configurations.
 
 ## 🔧 Installation
 
+### Quick Install (Recommended)
+
+Run the automated installation script that will install all dependencies and set up the configurations:
+
+```bash
+# Clone the repository
+git clone git@github.com:adeyahya/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+
+# Run the installation script
+./install.sh
+```
+
+The script will:
+- Install Homebrew (if not already installed)
+- Install all required dependencies (Neovim, Zsh, Tmux, etc.)
+- Install optional tools (Nushell, Bun, LazyGit, ripgrep, etc.)
+- Install Cascadia Code NF font
+- Install Oh My Zsh
+- Install Tmux Plugin Manager (TPM)
+- Create symbolic links for all configurations
+- Create a `~/private.zsh` file for your private configurations
+
+### Manual Installation
+
+If you prefer to install manually:
+
 1. **Clone the repository**:
    ```bash
    git clone git@github.com:adeyahya/dotfiles.git ~/.dotfiles
@@ -245,7 +272,7 @@ Edit `tmux/.tmux.conf` to customize:
 
 ## 📄 License
 
-This is a personal configuration repository. Feel free to use and modify as needed.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
