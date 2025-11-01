@@ -1,0 +1,39 @@
+# Btop Theme: Vague (Transparent)
+# Based on user-provided "Vague" theme with a transparent background.
+
+theme[vague]="Vague"
+
+# Base colors (Background set to "default" for transparency)
+color[background]="default"
+color[foreground]="#BDBDBD"
+color[text]="#AAAAAA"
+color[text_alt]="#777777"
+
+# Status/Highlighted colors
+color[selected_bg]="#444444"
+color[selected_fg]="#EAEAEA"
+color[title]="#D9D9D9"
+color[design]="#666666" # Used for borders, separator lines
+color[border]="#555555"
+color[border_alt]="#3D3D3D"
+color[set_bg]="default" # Background for panels (set to default for transparency)
+
+# Process colors
+color[process]="#CCCCCC"
+color[process_alt]="#AAAAAA"
+color[tree]="#AAAAAA"
+
+# Meter/Graph colors (Soft, muted colors for resource usage)
+color[cpu_low]="#95B0C7"
+color[cpu_med]="#95C795"
+color[cpu_high]="#C79595"
+color[cpu_peak]="#C7B095"
+color[mem]="#C795C7"
+color[disk]="#C7C795"
+color[temp]="#95C7B0"
+color[net]="#B095C7"
+
+# Other indicators
+color[div_line]="#555555"
+color[log_time]="#777777"
+color[log_text]="#AAAAAA"
