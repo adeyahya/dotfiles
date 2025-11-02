@@ -1,23 +1,42 @@
-theme:
-  activeBorderColor:
-    - '#f5c2e7'
-    - bold
-  inactiveBorderColor:
-    - '#a6adc8'
-  optionsTextColor:
-    - '#89b4fa'
-  selectedLineBgColor:
-    - '#313244'
-  cherryPickedCommitBgColor:
-    - '#45475a'
-  cherryPickedCommitFgColor:
-    - '#f5c2e7'
-  unstagedChangesColor:
-    - '#f38ba8'
-  defaultFgColor:
-    - '#cdd6f4'
-  searchingActiveBorderColor:
-    - '#f9e2af'
+gui:
+  theme:
+    # Active border: Using the 'title' color from Vague
+    activeBorderColor:
+      - '#D9D9D9'
+      - bold
+    
+    # Inactive border: Using the 'design/border' color
+    inactiveBorderColor:
+      - '#666666'
+    
+    # Options text: Using the 'Soft Blue' accent
+    optionsTextColor:
+      - '#95B0C7'
+    
+    # Selected line background: Directly from Vague 'selected_bg'
+    selectedLineBgColor:
+      - '#444444'
+    
+    # Cherry-picked commit background: Using the 'panel background' color
+    cherryPickedCommitBgColor:
+      - '#383838'
+    
+    # Cherry-picked commit text: Using the 'Soft Purple' accent
+    cherryPickedCommitFgColor:
+      - '#C795C7'
+    
+    # Unstaged changes: Using the 'Soft Red' accent
+    unstagedChangesColor:
+      - '#C79595'
+    
+    # Default text: Using the main 'foreground' color
+    defaultFgColor:
+      - '#BDBDBD'
+    
+    # Searching border: Using the 'Soft Amber' accent
+    searchingActiveBorderColor:
+      - '#C7B095'
 
-authorColors:
-  '*': '#b4befe'
+  authorColors:
+    # Default author color: Using the 'Soft Violet' accent
+    '*': '#B095C7'
