@@ -125,11 +125,12 @@ export PATH="$PATH:/Users/adeyahya/.lmstudio/bin"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$PATH:$HOME/.local/bin"
+# opencode
+export PATH=/Users/adeyahya/.opencode/bin:$PATH
 
 # execute nushell if it's in tmux
 if [[ -n "$TMUX" ]]; then
     exec nu
 fi
-
-export PATH="$PATH:$HOME/.local/bin"
 

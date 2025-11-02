@@ -169,63 +169,7 @@ install_tpm() {
     fi
 }
 
-# Create symbolic links
-create_symlinks() {
-    print_info "Creating symbolic links..."
 
-    DOTFILES_DIR="$HOME/.dotfiles"
-
-    if [ ! -d "$DOTFILES_DIR" ]; then
-        print_warning "Dotfiles directory not found at $DOTFILES_DIR"
-        print_info "Skipping symlink creation. Please clone the repository first."
-        return
-    fi
-
-    # Backup existing configs
-    backup_dir="$HOME/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
-    mkdir -p "$backup_dir"
-
-    # Zsh
-    if [ -f "$HOME/.zshrc" ] && [ ! -L "$HOME/.zshrc" ]; then
-        print_info "Backing up existing .zshrc"
-        mv "$HOME/.zshrc" "$backup_dir/.zshrc"
-    fi
-    ln -sf "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
-    print_success "Linked .zshrc"
-
-    # Tmux
-    if [ -f "$HOME/.tmux.conf" ] && [ ! -L "$HOME/.tmux.conf" ]; then
-        print_info "Backing up existing .tmux.conf"
-        mv "$HOME/.tmux.conf" "$backup_dir/.tmux.conf"
-    fi
-    ln -sf "$DOTFILES_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
-    print_success "Linked .tmux.conf"
-
-    # Neovim
-    if [ -d "$HOME/.config/nvim" ] && [ ! -L "$HOME/.config/nvim" ]; then
-        print_info "Backing up existing nvim config"
-        mv "$HOME/.config/nvim" "$backup_dir/nvim"
-    fi
-    mkdir -p "$HOME/.config"
-    ln -sf "$DOTFILES_DIR/nvim/.config/nvim" "$HOME/.config/nvim"
-    print_success "Linked nvim config"
-
-    # Ghostty
-    if [ -d "$DOTFILES_DIR/ghostty/.config/ghostty" ]; then
-        if [ -d "$HOME/.config/ghostty" ] && [ ! -L "$HOME/.config/ghostty" ]; then
-            print_info "Backing up existing ghostty config"
-            mv "$HOME/.config/ghostty" "$backup_dir/ghostty"
-        fi
-        ln -sf "$DOTFILES_DIR/ghostty/.config/ghostty" "$HOME/.config/ghostty"
-        print_success "Linked ghostty config"
-    fi
-
-    if [ "$(ls -A $backup_dir 2>/dev/null)" ]; then
-        print_info "Backups saved to: $backup_dir"
-    else
-        rmdir "$backup_dir"
-    fi
-}
 
 # Create private.zsh file
 create_private_zsh() {
@@ -292,14 +236,6 @@ main() {
     install_tpm
     echo ""
 
-    # Create symlinks
-    print_info "Do you want to create symbolic links for dotfiles? [Y/n]"
-    read -r response
-    if [[ "$response" =~ ^([yY][eE][sS]|[yY]|)$ ]]; then
-        create_symlinks
-        echo ""
-    fi
-
     # Create private.zsh
     create_private_zsh
     echo ""
@@ -314,10 +250,11 @@ main() {
     print_success "All dependencies have been installed!"
     echo ""
     print_info "Next steps:"
-    echo "  1. Restart your terminal or run: source ~/.zshrc"
-    echo "  2. Open Neovim to install plugins: nvim"
-    echo "  3. Start tmux and install plugins: tmux (then press Ctrl+a + I)"
-    echo "  4. Add your API keys to ~/private.zsh if using Avante.nvim"
+    echo "  1. Create symlinks manually for your dotfiles"
+    echo "  2. Restart your terminal or run: source ~/.zshrc"
+    echo "  3. Open Neovim to install plugins: nvim"
+    echo "  4. Start tmux and install plugins: tmux (then press Ctrl+a + I)"
+    echo "  5. Add your API keys to ~/private.zsh if using Avante.nvim"
     echo ""
     print_warning "Note: You may need to set Zsh as your default shell:"
     echo "  chsh -s \$(which zsh)"
