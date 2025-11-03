@@ -13,7 +13,7 @@ return {
     -- this file can contain specific instructions for your project
     instructions_file = "avante.md",
     -- for example
-    provider = "openrouter",
+    provider = "openai",
     providers = {
       openrouter = {
         -- KEY: OpenRouter uses the OpenAI API structure, so we inherit from it
@@ -50,6 +50,13 @@ return {
         extra_request_body = {
           temperature = 0.75,
           max_tokens = 32768,
+        },
+      },
+      openai = {
+        endpoint = "https://api.openai.com/v1",
+        model = "gpt-5", -- or "gpt-4-turbo", "gpt-3.5-turbo", etc.
+        extra_request_body = {
+          temperature = 0.75,
         },
       },
     },
