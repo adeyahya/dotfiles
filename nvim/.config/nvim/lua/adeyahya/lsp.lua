@@ -7,6 +7,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     local opts = { buffer = ev.buf, silent = true, desc = "Go to Definition" }
     -- gd: Go to definition using built-in LSP
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+
+    -- ca: for code action
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, vim.tbl_extend("force", opts, { desc = "Code Action" }))
   end,
 })
 
