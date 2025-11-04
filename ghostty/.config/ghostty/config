@@ -52,5 +52,5 @@ theme = dark:Catppuccin Mocha,light: Catppuccin Latte
 # theme = Vague
 font-thicken = true
 # window-decoration = false
-background-opacity = 0.8
-background-blur = 15
+background-opacity = 0.5
+background-blur = 80
