@@ -1,5 +1,3 @@
-vim.lsp.enable("lua_ls")
-
 -- Set buffer-local keymaps when an LSP attaches to a buffer
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("ade_lsp_attach", { clear = true }),
@@ -13,4 +11,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
+vim.diagnostic.config({
+  virtual_text = true, -- Shows errors inline
+  signs = true, -- Shows signs in gutter
+  underline = true, -- Underlines problematic code
+})
+
+vim.lsp.enable("lua_ls")
 vim.lsp.enable("ts_ls")
+vim.lsp.enable("eslint")
