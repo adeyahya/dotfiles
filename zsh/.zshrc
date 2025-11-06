@@ -129,6 +129,9 @@ export PATH="$PATH:$HOME/.local/bin"
 # opencode
 export PATH=/Users/adeyahya/.opencode/bin:$PATH
 
+# claude code vim mode
+export CLAUDE_EXTENDED_KEYBOARD=false
+
 # execute nushell if it's in tmux
 if [[ -n "$TMUX" ]]; then
     exec nu
