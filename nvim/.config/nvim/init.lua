@@ -32,13 +32,6 @@ vim.opt.splitright = true -- Vertical splits right of current window
 
 vim.opt.termguicolors = true -- Enable 24-bit RGB color support
 
--- Lua keymaps for window navigation (pane switching)
--- Remap C-h, C-j, C-k, C-l to navigate between splits (panes)
-vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Window Left" })
-vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Window Down" })
-vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Window Up" })
-vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Window Right" })
-
 -- toggle relative number
 vim.keymap.set("n", "<leader>n", ":set relativenumber!<CR>", { desc = "Toggle relative number" })
 
