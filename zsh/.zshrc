@@ -107,6 +107,9 @@ source $ZSH/oh-my-zsh.sh
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 alias vim="nvim"
 alias v="nvim"
+alias lg="lazygit"
+alias y="yazi"
+
 export EDITOR="nvim"
 fpath=(/Users/adeyahya/.docker/completions $fpath)
 autoload -Uz compinit
@@ -131,9 +134,3 @@ export PATH=/Users/adeyahya/.opencode/bin:$PATH
 
 # claude code vim mode
 export CLAUDE_EXTENDED_KEYBOARD=false
-
-# execute nushell if it's in tmux
-if [[ -n "$TMUX" ]]; then
-    exec nu
-fi
-
