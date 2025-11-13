@@ -20,7 +20,7 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 # font-family = Iosevka
-window-padding-x = 4
+# window-padding-x = 4
 
 # using tmux as default multiplexer
 command=/bin/zsh -l -c 'tmux attach || tmux'

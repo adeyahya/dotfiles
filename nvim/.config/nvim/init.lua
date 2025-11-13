@@ -3,6 +3,10 @@ vim.g.mapleader = " "
 require("adeyahya.config.lazy")
 require("adeyahya.lsp")
 
+require("notify").setup({
+  background_colour = "#000000"
+})
+
 vim.g.loaded_netrw = 0
 vim.g.loaded_netrwPlugin = 0
 
@@ -36,9 +40,9 @@ vim.opt.termguicolors = true -- Enable 24-bit RGB color support
 vim.keymap.set("n", "<leader>n", ":set relativenumber!<CR>", { desc = "Toggle relative number" })
 
 -- Tabs & Indentation
-vim.opt.tabstop = 2 -- NEW: The width of a <Tab> is 2 spaces.
+vim.opt.tabstop = 2      -- NEW: The width of a <Tab> is 2 spaces.
 vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2 -- NEW: Indentation amount is 2 spaces.
+vim.opt.shiftwidth = 2   -- NEW: Indentation amount is 2 spaces.
 vim.opt.expandtab = true -- Converts <Tab> key presses to spaces.
 vim.opt.autoindent = true
 vim.opt.smartindent = true
