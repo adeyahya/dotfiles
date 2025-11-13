@@ -1,15 +1,14 @@
 return {
   {
     "vague-theme/vague.nvim",
-    lazy = true, -- make sure we load this during startup if it is your main colorscheme
+    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other plugins
     config = function()
       -- NOTE: you do not need to call setup if you don't want to.
       require("vague").setup({
-        -- optional configuration here
         transparent = true,
       })
-      -- vim.cmd("colorscheme vague")
+      vim.cmd("colorscheme vague")
     end,
   },
   {
@@ -18,7 +17,7 @@ return {
 
     -- 1. Set a high priority and disable lazy loading.
     --    This ensures the colorscheme loads before other plugins apply their colors.
-    lazy = false,
+    lazy = true,
     priority = 1000,
 
     -- 2. Use the 'config' function to set up and apply the theme
@@ -45,7 +44,7 @@ return {
         },
       })
 
-      vim.cmd("colorscheme catppuccin")
+      -- vim.cmd("colorscheme catppuccin")
 
       -- 3. Apply the colorscheme
       -- vim.cmd.colorscheme("catppuccin")

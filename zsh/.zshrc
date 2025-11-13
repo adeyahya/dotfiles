@@ -134,3 +134,6 @@ export PATH=/Users/adeyahya/.opencode/bin:$PATH
 
 # claude code vim mode
 export CLAUDE_EXTENDED_KEYBOARD=false
+
+# using vi mode
+set -o vi

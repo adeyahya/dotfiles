@@ -13,10 +13,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 vim.diagnostic.config({
   virtual_text = true, -- Shows errors inline
-  signs = true, -- Shows signs in gutter
-  underline = true, -- Underlines problematic code
+  signs = true,        -- Shows signs in gutter
+  underline = true,    -- Underlines problematic code
 })
 
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("ts_ls")
 vim.lsp.enable("eslint")
+vim.lsp.enable("tailwindcss")

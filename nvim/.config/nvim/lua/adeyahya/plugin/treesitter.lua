@@ -10,7 +10,7 @@ return {
     config = function()
       -- Setup the main treesitter config first.
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "lua", "vim", "markdown", "markdown_inline" },
+        ensure_installed = { "lua", "vim", "markdown", "markdown_inline", "tsx", "javascript", "html", "css", "json" },
         highlight = {
           enable = true,
           additional_vim_regex_highlighting = { "markdown", "mdx" },
