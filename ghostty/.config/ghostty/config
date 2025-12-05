@@ -53,4 +53,4 @@ theme = Vague
 font-thicken = true
 # window-decoration = false
 background-opacity = 0.95
-# background-blur = 40
+# background-blur = 10
